@@ -16,6 +16,8 @@ if (typeof numberOne !== 'number' && typeof numberTwo !== 'number') {
     document.write("phep chia" + "" + chia + "<br/>")
 }
 
+// bai 2
+
 let x = parseFloat(prompt('Enter a positive number: '));
 
 if (x >= 1) {
