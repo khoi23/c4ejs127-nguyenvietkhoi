@@ -1,10 +1,10 @@
 // bài 1
 
-let numberOne = parseFloat(prompt('Nhập số thứ nhất:', '23,31'));
-let numberTwo = parseInt(prompt('Nhập số thứ hai:', '21,41'));
+// let numberOne = parseFloat(prompt('Nhập số thứ nhất:', '23,31'));
+// let numberTwo = parseInt(prompt('Nhập số thứ hai:', '21,41'));
 
-console.log(numberOne)
-console.log(numberTwo)
+// console.log(numberOne)
+// console.log(numberTwo)
 
 let weight = parseInt(prompt('Nhập cân nặng của bạn:', '50'));
 let height = parseFloat(prompt('Nhập chiều cao của bạn:(đơn vị mét)', 1.6));
