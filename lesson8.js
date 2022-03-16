@@ -1,31 +1,68 @@
-// bài 1 
+// // bài 1 
 
-let numberOne = prompt('Nhập số thứ nhất', '12.23');
-let numberTwo = prompt('Nhập số thứ hai', '52.23');
+// let numberOne = parseFloat(prompt('Nhập số thứ nhất', '12.23'));
+// let numberTwo = parseFloat(prompt('Nhập số thứ hai', '12.23'));
+// let input = prompt('Nhap chuc nang: +, -, * và /.','+');
+// let result = '';
 
-if (typeof numberOne !== 'number' && typeof numberTwo !== 'number') {
-    document.write(numberOne + " hoặc " + numberTwo + " is not a number <br/>")
+// if (input === '+') {
+//     result = numberOne + numberTwo;
+// } else if (input === '-') {
+//     result = numberOne - numberTwo;
+// }else if (input === '*') {
+//     result = numberOne * numberTwo;
+// }else if (input === '/') {
+//     result = numberOne / numberTwo;
+// } else {
+//     result = undefined;
+// }
+// console.log(result);
+
+// switch (input) {
+//     case '+':
+//         result = numberOne + numberTwo;
+//         break;
+//     case '-':
+//         result = numberOne - numberTwo;
+//         break;
+//     case '*':
+//         result = numberOne * numberTwo;
+//         break;
+//     case '/':
+//         result = numberOne / numberTwo;
+//         break;
+
+//     default: result = NaN
+//         break;
+// }
+// console.log(result);
+// // bai 2
+
+const number = parseInt(prompt("Enter a positive number: "));
+let isPrime = true;
+
+// if (number < 2) isPrime = false;
+// let i = 2;
+// while(i < number) {
+//     if (number % i == 0) {
+//         isPrime = false;
+//         break
+//     } 
+//     i++;
+// }
+if (number < 2) {
+    isPrime = false;
 } else {
-    cong = numberOne + numberTwo;
-    document.write("phep cong" + "" + cong + "<br/>")
-    tru = numberOne - numberTwo;
-    document.write("phep tru" + "" + tru + "<br/>")
-    nhan = numberOne * numberTwo;
-    document.write("phep nhan" + "" + nhan + "<br/>")
-    chia = numberOne / numberTwo;
-    document.write("phep chia" + "" + chia + "<br/>")
+    for (let i = 2; i < number; i++) {
+        if (number % i == 0){
+            isPrime = false;
+            break;
+        }
+    }
 }
 
-// bai 2
-
-let x = parseFloat(prompt('Enter a positive number: '));
-
-if (x >= 1) {
-    if (x == 1) {
-        console.log(`${x} equal to 1`);
-    } else {
-        console.log(`${x} greather than 1`);
-    }
+if (isPrime === true) {
+    console.log(`${number} la so nguyen to`);
 } else {
-    console.log(`${x} less than 1`)
+    console.log(`${number} khong la so nguyen to`);
 }
