@@ -38,8 +38,8 @@
 // console.log(result);
 // // bai 2
 
-const number = parseInt(prompt("Enter a positive number: "));
-let isPrime = true;
+const n = parseInt(prompt("Enter a positive number: "));
+// let isPrime = true;
 
 // if (number < 2) isPrime = false;
 // let i = 2;
@@ -50,19 +50,19 @@ let isPrime = true;
 //     } 
 //     i++;
 // }
-if (number < 2) {
-    isPrime = false;
-} else {
-    for (let i = 2; i < number; i++) {
-        if (number % i == 0){
-            isPrime = false;
-            break;
-        }
-    }
-}
+// if (number < 2) {
+//     isPrime = false;
+// } else {
+//     for (let i = 2; i < number; i++) {
+//         if (number % i == 0){
+//             isPrime = false;
+//             break;
+//         }
+//     }
+// }
 
-if (isPrime === true) {
-    console.log(`${number} la so nguyen to`);
-} else {
-    console.log(`${number} khong la so nguyen to`);
-}
+// if (isPrime === true) {
+//     console.log(`${number} la so nguyen to`);
+// } else {
+//     console.log(`${number} khong la so nguyen to`);
+// }
